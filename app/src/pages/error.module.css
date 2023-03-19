@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+
+.Error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.Error p {
+    z-index: 2;
+}
+.Error p:last-child {
+    z-index: 1;
+}
+.Error p:nth-child(1) {
+    font-size: 40px;
+}
+.background__text {
+    position: absolute;
+    color: var(--lightblue);
+    font-size: 400px;
+    font-family: 'Rubik Glitch', cursive;
+}
+@media screen and (max-width: 1250px) {
+    .background__text {
+        font-size: 300px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .background__text {
+        font-size: 200px;
+    }
+}
+@media screen and (max-width: 670px) {
+    .background__text {
+        font-size: 150px;
+    }
+}
+@media screen and (max-width: 530px) {
+    .Error p:nth-child(1) {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 487px) {
+    .background__text {
+        font-size: 100px;
+    }
+}

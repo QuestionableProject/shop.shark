@@ -1,0 +1,55 @@
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding: 0 100px 50px 100px;
+    animation: animated 1s;
+}
+.feedback {
+    display: flex;
+    gap: 40px;
+    color: var(--black);
+    overflow-y: scroll;
+}
+.feedback::-webkit-scrollbar {
+    width: 0;
+}
+.official {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.text {
+    width: 1000px;
+}
+@media screen and (max-width: 1400px){
+    .feedback {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .text {
+        max-width: 600px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 960px){
+    .aboutme {
+        padding: 0 10px 50px 10px;
+    }
+    .feedback {
+        height: 350px;
+    }
+}
+
+@keyframes animated {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}

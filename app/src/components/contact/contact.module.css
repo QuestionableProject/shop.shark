@@ -1,0 +1,58 @@
+.contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px 50px 100px;
+    animation: animated 1s;
+    height: 100%;
+    gap: 20px;
+}
+.post {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background: var(--darkblue);
+    padding: 20px;
+    width: 300px;
+    height: 100%;
+    border-radius: var(--borderRadius);
+    
+}
+.map {
+    width: 1000px;
+    cursor: pointer;
+    border-radius: var(--borderRadius);
+    background: beige;
+    border: 0;
+}   
+@media screen and (max-width: 1200px) {
+    .contact {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    .post {
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        justify-content: space-between;
+    }
+    .map {
+        width: auto;
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 800px) { 
+    .contact {
+        padding: 0 10px 50px 10px;
+    }
+}
+@keyframes animated {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}

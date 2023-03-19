@@ -1,0 +1,55 @@
+.card {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 10px;
+    max-width: 350px;
+    background-color: var(--darkblue);
+    border-radius: var(--borderRadius);   
+    transition: background 1s;
+}
+.img {
+    display: flex;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background: white;
+    border-radius: var(--borderRadius);
+    padding: 5px;
+}
+.img img {
+    border-radius: var(--borderRadius);
+    max-width: 100%;
+    max-height: 100%;
+}
+.card button {
+    background: var(--btnColor);
+    border: 0;
+    color: var(--white);
+    padding: 0 10px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background .7s, color .7s;
+}
+.text {
+    display: flex;
+    justify-content: space-between;
+}
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    flex: 1;
+}
+.btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+    .card {
+        gap: 10px;
+    }
+}

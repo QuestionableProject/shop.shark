@@ -1,0 +1,12 @@
+.Eye {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    stroke: rgb(155, 155, 155);
+    transition: stroke 1s;
+}
+.Eye:hover {
+    stroke: rgb(0, 0, 0);
+}

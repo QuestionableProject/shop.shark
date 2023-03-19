@@ -1,0 +1,26 @@
+.FeedbackCard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    word-wrap: break-word;
+    width: 400px;
+    background: var(--darkblue);
+    border-radius: var(--borderRadius);
+    padding: 20px;
+    text-align: left;
+    color: white;
+}
+.photo {
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: var(--borderRadius);
+}
+.feedback__block {
+    display: flex;
+    gap: 20px;
+}
+.feedback__information {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}

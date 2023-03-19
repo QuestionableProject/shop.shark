@@ -1,0 +1,46 @@
+.Card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    background: var(--btnColor);
+    padding: 10px;
+    border-radius: var(--borderRadius);
+    color: var(--white);
+    gap: 20px;
+}
+.block {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    gap: 20px;
+}
+.block img {
+    max-height: 50px;
+    border-radius: var(--borderRadius);
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.btn {
+    display: flex;
+    align-items: center;
+}
+.btn p {
+    pointer-events: none;
+}
+.btn button {
+    outline: none;
+    border: 0;
+    background: none;
+    color: white;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,11 @@
+.Layout {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: var(--blue);
+    color: var(--white);
+}
+.Layout button {
+    outline: none;
+}

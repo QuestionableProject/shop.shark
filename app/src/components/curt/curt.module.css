@@ -1,0 +1,80 @@
+.Curt {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    border-radius: var(--borderRadius);
+    background: var(--white);
+    width: 70%;
+    height: 70vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* 4 */
+    z-index: 11;
+}
+.Curt::-webkit-scrollbar {
+    width: 0px;
+}
+.curt__box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.curt__product {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    overflow-y: scroll;
+    max-height: 200px;
+}
+.curt__product::-webkit-scrollbar {
+    width: 5px;
+    background: rgb(246, 246, 246);
+}
+.curt__product::-webkit-scrollbar-thumb {
+    background: var(--btnColor);
+}
+.curt__decoration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.decoration {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.curt__decoration button {
+    background: var(--btnColor);
+    color: white;
+    padding: 10px 50px;
+    cursor: pointer;
+    border: 0;
+    border-radius: var(--borderRadius);
+}
+.curt__decoration input {
+    outline: none;
+    border: 0;
+    padding: 10px;
+    transition: all 1s;
+    border-bottom: 1px solid var(--black);
+}
+.curt__decoration input:focus {
+    border-bottom: 1px solid var(--btnColor);
+}
+@media screen and (max-width: 1200px) {
+    .Curt {
+        overflow-y: scroll;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .curt__product {
+        grid-template-columns: 1fr;
+    }
+}

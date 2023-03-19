@@ -1,0 +1,10 @@
+.svg {
+    cursor: pointer;
+    display: none;
+    fill: white;
+}
+@media (max-width: 960px) {
+    .svg {
+        display: block;
+    }
+}

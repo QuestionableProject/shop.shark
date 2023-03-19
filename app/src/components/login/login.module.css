@@ -1,0 +1,45 @@
+.login__block {
+    padding: 30px;
+    width: 450px;
+    height: 100vh;
+    background: var(--white);
+    position: absolute;
+    right: 0;
+    z-index: 1000;
+    color: var(--black);
+}
+.login__block form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.login__block label {
+    width: 100%;
+    position: relative;
+}
+.login__block button {
+    background: var(--btnColor);
+    color: white;
+    padding: 10px 0;
+    cursor: pointer;
+    border: 0;
+    border-radius: var(--borderRadius);
+}
+.login__block input {
+    outline: none;
+    border: 0;
+    padding: 10px;
+    transition: all 1s;
+    width: 100%;
+}
+
+.login__block input:focus {
+    border-bottom: 1px solid var(--black);
+}
+.login__block p {
+    cursor: pointer;
+    transition: color .7s;
+}
+.login__block p:hover {
+    color: var(--btnColor);
+}

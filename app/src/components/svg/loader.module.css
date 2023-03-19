@@ -1,0 +1,26 @@
+.loader {
+    fill: none;
+    stroke: var(--white);
+    stroke-width: 7px;
+    stroke-linecap: round;
+    stroke-dasharray: 628;
+    stroke-dashoffset: 628;
+    /* transform: rotate(298deg); */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: loading 3s infinite;
+}
+@keyframes loading {
+    0% {
+        stroke-dashoffset: 628;
+
+    }
+    50% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 628;
+    }
+}
