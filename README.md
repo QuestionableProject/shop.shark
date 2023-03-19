@@ -7,12 +7,12 @@ DESIGN -- https://dribbble.com/shots/14210110-Fishing
 <b>Install pnpm</b> <br>
    
 <b>Start Frontend</b> <br>
-•cd app <br>
-•pnpm run dev
+- cd app <br>
+- pnpm run dev
 
 <b>Start Backend</b> <br>
-•cd server <br>
-•create .env and register your database there:
+- cd server <br>
+- create a `.env` file or edit `.env.example` add your database data
 ```
     WEBSITEPORT="The site that is allowed cors access"
     PORT="Server startup port"
@@ -23,4 +23,4 @@ DESIGN -- https://dribbble.com/shots/14210110-Fishing
     DB_PORT= 
     SECRET_KEY=Secret key for JWT
 ```
-•pnpm run dev
+- pnpm run dev
